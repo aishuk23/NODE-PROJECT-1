@@ -1,5 +1,7 @@
 const teachers=[
+  
   {
+    
     id:1,
     fname:"aish",
     lname:"koth",

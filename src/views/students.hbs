@@ -11,10 +11,13 @@
     <tbody>
       {{#each students}}
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">{{formatIndex @index}}</th>
         <td>{{this.firstName}}</td>
         <td>{{this.lastName}}</td>
-        <td><a href="/students/edit/:id">Edit</a></td>
+        <td>
+          <a href="/edit-student/{{this.id}}">Edit</a>
+          <a href="/delete-student/{{this.id}}">Delete</a>
+        </td>
       </tr>
       {{/each}}
     </tbody>
